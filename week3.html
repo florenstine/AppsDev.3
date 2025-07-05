@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+</head>
+<body>
+    <h1>Pizza Order Form</h1>
+
+    <form>
+        <div>
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname" name="fname" required>
+
+            <br><br>
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname" name="lname" required>
+
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+            <label for="num">Contact Number: </label>
+            <input type="tel" id="num" name="num" required>
+            <br><br>
+        </div>
+
+        <label for="deldate">Preferred Delivery Date: </label>
+        <input type="date" id="deldate" name="deldate" required>
+        <br><br>
+
+        <div>
+            <label for="size:">Pizza Size: </label><br>
+            <input type="radio" id="small" name="size" value="small" required>
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>  
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label>
+        </div>
+
+        <div>
+            <br><br>
+            <label for="flavor">Pizza Flavor: </label><br>
+            <input type="checkbox" id="hawaiian" name="flavor" value="hawaiian">
+            <label for="hawaiian">Hawaiian (Php 150.00): &nbsp; </label>
+            <select id="hawqty" name="hawqty">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <br>
+            <input type="checkbox" id="pepperoni" name="flavor" value="pepperoni">
+            <label for="pepperoni">Pepperoni (Php 140.00): &nbsp; </label>
+            <select id="pepqty" name="pepqty">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <br>
+            <input type="checkbox" id="vegetable" name="flavor" value="vegetable">
+            <label for="vegetable">Vegetable (Php 130.00): &nbsp; </label>
+            <select id="vegqty" name="vegqty">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>    
+            </select>
+        </div>
+
+        <br><br>
+        <label for="creditnum">Credit Card Number: </label> &nbsp;
+        <input type="text" id="creditnum" name="creditnum" required pattern="\d{16}">
+
+        <br><br>
+        <label for="pin">PIN: </label> &nbsp;
+        <input type="password" id="pin" name="pin" required>
+
+        <br><br>
+        <label for="notes">Additional Notes: </label><br>
+        <textarea id="notes" name="notes"></textarea>
+
+        <br><br><br>
+        <input type="submit" value="Submit Order">
+    </form>
+
+</body>
+</html>
